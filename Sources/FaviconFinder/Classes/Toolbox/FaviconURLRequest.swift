@@ -11,6 +11,10 @@ import Foundation
 import SwiftSoup
 #endif
 
+#if canImport(AsyncCompatibilityKit)
+import AsyncCompatibilityKit
+#endif
+
 class FaviconURLRequest {
 
     static func dataTask(with url: URL, checkForMetaRefreshRedirect: Bool = false) async throws -> (Data, URLResponse) {

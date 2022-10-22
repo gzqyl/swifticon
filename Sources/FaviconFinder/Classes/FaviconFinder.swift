@@ -19,6 +19,10 @@ import UIKit
 public typealias FaviconImage = UIImage
 #endif
 
+#if canImport(AsyncCompatibilityKit)
+import AsyncCompatibilityKit
+#endif
+
 public class FaviconFinder: NSObject {
 
     // MARK: - Properties

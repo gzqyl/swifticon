@@ -11,6 +11,10 @@ import Foundation
 import SwiftSoup
 #endif
 
+#if canImport(AsyncCompatibilityKit)
+import AsyncCompatibilityKit
+#endif
+
 class WebApplicationManifestFaviconFinder: FaviconFinderProtocol {
 
     // MARK: - Types

@@ -6,6 +6,10 @@
 //
 
 import Foundation
+#if canImport(AsyncCompatibilityKit)
+import AsyncCompatibilityKit
+#endif
+
 
 class ICOFaviconFinder: FaviconFinderProtocol {
 
